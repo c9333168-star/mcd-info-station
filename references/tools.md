@@ -57,6 +57,15 @@
 
 | Tool | 说明 | 要点 |
 |---|---|---|
+| `query-promotions` | 营销活动/促销查询 | 文档未列但实测可用（API 实测 35 工具） |
+| `query-survey-coupon` | 问卷/调研类券查询 | 文档未列但实测可用（API 实测 35 工具） |
 | `query-meals` / `query-meal-detail` | 菜单与套餐详情 | 活动对应餐品时使用 |
 | `list-nutrition-foods` | 营养成分 | 新品/热量参考 |
 | `query-nearby-stores` | 附近门店 | 需要门店位置的场景 |
+
+## 实测备注
+
+- 官方 README 列出 30 个工具，本 Skill 开发时经 `tools/list` 实测为 **35 个**，
+  多出的 `query-promotions`、`query-survey-coupon` 等以实际 API 返回为准。
+- 官方 README 中写作 `query-partystore-date` / `query-partystore-session`，
+  实际 API 工具名为 `query-party-store-date` / `query-party-store-session`（多一个横杠），开发时需注意。
