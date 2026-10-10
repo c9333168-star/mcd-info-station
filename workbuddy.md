@@ -7,7 +7,7 @@
 本项目在 **腾讯 WorkBuddy** 智能体中完成开发：
 
 - **需求分析与选题**：由 WorkBuddy 对话完成——检索官方赛事规则（M-China/mcd-developer-innovation-challenge 仓库）与实时排行榜，识别「省钱助手」「活动雷达」等已有同质作品，确定「全场景情报中枢」差异化定位。
-- **官方文档研读**：WorkBuddy 通过对话拉取 M-China/mcd-mcp-server 官方 README，整理出 30+ 个 MCP 工具的完整清单与用途说明，沉淀为 `references/tools.md`。
+- **官方文档研读**：WorkBuddy 通过对话拉取 M-China/mcd-mcp-server 官方 README，并经 MCP `tools/list` 实测确认 **35 个工具**（官方文档列 30 个，实测多出 `query-promotions`、`query-survey-coupon` 等；还发现官方文档派对工具名漏写横杠），沉淀为 `references/tools.md`。
 - **SKILL 编写**：`SKILL.md`（技能主体）、`MCP_INTEGRATION.md`（接入说明）、`README.md`、`CONTEST_DECLARATION.md` 等全部参赛文件均由 WorkBuddy 在对话中生成与迭代。
 - **MCP 接入**：按 WorkBuddy 自定义连接器方式配置 `mcd-mcp`（Streamable HTTP + Bearer Token），并在 WorkBuddy 会话中进行真实 MCP 联调。
 
